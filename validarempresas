@@ -1,0 +1,11 @@
+ function ValidarEmpresas() {
+   
+  
+    if (!miCasa.hayEmpresa()) {
+        alert("Debes ingresar empresas primero");
+        return;
+    }else{
+  
+    verReclamos();
+    }
+}
