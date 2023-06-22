@@ -1,0 +1,356 @@
+* {
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+
+/* header css */ 
+
+header  {
+    padding: 15px;
+    display: flex;
+}
+
+header  ul {
+    position: relative;
+    right: 60px;
+}
+
+header  ul li img {
+    width: 25px;
+    height: 25px;
+    margin: 0px 7px 0px 7px;
+    position: relative;
+    top: 5px;
+}
+
+header  ul li {
+    margin-left: 15px;
+    font-size: 20;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    color: #3c8312;
+}
+
+header  ul li form {
+    position: relative;
+    top: 2.5px;
+    display: inline-block;
+}
+
+header  ul li form button {
+    position: relative;
+    top: 1.5px;
+    width: 27px;
+    height: 20px;
+}
+
+header  ul li form button img {
+    position: relative;
+    top: 1px;
+    right: 47%;
+    width: 15px;
+    height: 15px;
+}
+
+header  ul li form #colorbot {
+    background-color: #b0c858;
+    padding: 0px 3px 0px;
+}
+
+/* body css */ 
+
+body {
+    background-color: #b0c858;
+}
+
+/* Inicio de pagina */
+
+body .inicio {
+    margin-left: 4px;
+    background-color: #ff9f79;
+}
+
+body #inicio1 {
+    display: block;
+}
+
+body #ocultarenreclamos {
+    display: block;
+}
+
+body #inicio1 #h2mostrar {
+    display: block;
+}
+
+body .inicio img {
+    margin-top: 10px;
+    width: 34px;
+    padding: 3px;
+    height: 40px;
+    position: relative;
+    top: 15px;
+    border-radius: 4px;
+    border: solid 1.5px rgba(255, 255, 255, 0.5);
+}
+
+body .inicio h1 {
+    margin-top: 13px;
+}
+
+body .inicio p {
+    margin-top: 13px;
+}
+
+body .inicio .nombreft {
+    text-align: center;
+    display: inline-block;
+}
+
+body .inicio .nombreft cite {
+    color: #3c8312;
+    font-size: 10px;
+    font-weight: 800;
+    position: relative;
+    right: 1px;
+}
+
+body .bttnreclamo {
+    display: flex;
+    justify-content: center;
+    
+}
+
+body .botonreclamo {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: solid 1.5px #000;
+    background: linear-gradient(180deg, #afc352, #c17a4c);
+}
+
+/* Agregar reclamos */
+
+body .agregarR {
+    margin-left: 4px;
+    background-color: #c39c51;
+}
+
+body #agregarRr {
+    display: none;
+}
+
+body .agregarR form {
+    margin-top: 25px;
+}
+
+body .agregarR form input,select,textarea {
+    border: solid 0.5px #1f1e1e;
+}
+
+body .agregarR form  .nombre {
+    margin-left: 30px;
+    width: 200px;
+}
+
+body .agregarR form  .empresa {
+    margin-left: 23px;
+    width: 200px;
+}
+
+body .agregarR form  .reclamo {
+    margin-left: 20px;
+    width: 200px;
+}
+
+body .agregarR form textarea {
+    width: 50%;
+    margin-top: 1px;
+    margin-left: 92px;
+}
+
+body .agregarR form button {
+    margin-top: 5px;
+    margin-left: 92px;
+}
+
+/* Ingreso de reclamos */
+
+body .reclamosingresados {
+    background-color: #c07651;
+    margin: 0px 0px 0px 4px;
+}
+
+body #reclamosingresadosid {
+    display: none;
+}
+
+body .reclamosingresados .contador h3 {
+    margin: 15px 0px 15px 0px;
+    font-size: 19px;
+}
+
+body .reclamosingresados .cajareclamo {
+    margin-left: 70px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: white;
+    border: solid 2px #000;
+}
+body .reclamosingresados .cajareclamo .texto {
+    margin: 14px 0px 10px 20%;
+}
+
+body .reclamosingresados .cajareclamo #longitud {
+    margin-right: 2%;
+}
+
+body .reclamosingresados .cajareclamo .unidor {
+    display: inline-flex;
+    margin: 4px 0px 0px 20%;
+}
+
+body .reclamosingresados .cajareclamo .unidor button {
+    border: solid 0.5px #939393;
+    margin: 0px 12px 17px 0px;
+}
+
+body .reclamosingresados .color1 {
+    background-color: #fc9d81;
+}
+
+body .reclamosingresados .color2 {
+    background-color: #37cb3a;
+}
+
+body #sinreclamos {
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+/*Estadistica*/
+
+body .estadistica {
+    background-color: #c39c51;
+    margin: 15px 0px 0px 4px;
+}
+
+body #estadisticaid {
+    display: none;
+}
+
+body .estadistica h1 {
+    margin: 15px 0px 15px 0px;
+    font-size: 19px;
+}
+
+body .estadistica .filtro {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+body .estadistica .filtro button {
+    border: solid 0.5px #939393;
+    margin-left: 2px;
+}
+
+body .estadistica .filtro .color{
+    background: #37cd32;
+    border: solid 0.5px #000000;
+}
+
+body .estadistica .orden {
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+}
+
+body .estadistica .orden input {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+body .estadistica .tabla {
+    display: flex;
+    justify-content: center;
+}
+
+body .estadistica .tabla table {
+    background-color: white;
+    border: solid 0.5px #000000;
+    border-radius: 10px;
+    width: 80%;
+}
+
+body .estadistica .tabla table th {
+    border: solid 0.5px #000000;
+}
+
+body .estadistica .tabla table td {
+    border: solid 0.5px #000000;
+    text-align: center;
+}
+
+body .estadistica .informacion p,h1,h3 {
+    margin-top: 17px;
+}
+
+body .estadistica .informacion ul li {
+    margin-top: 17px;
+}
+
+/* Agregar Empresa */
+
+body .agregarE {
+    margin: 15px 0px 5px 4px;
+    background-color: #99f997;
+}
+
+body  #agregarEid {
+    display: none;
+}
+
+body .agregarE form {
+    margin-top: 25px;
+}
+
+body .agregarE form input,select {
+    border: solid 0.5px #1f1e1e;
+}
+
+body .agregarE form .nombre {
+    margin-left: 41px;
+    width: 150px;
+}
+
+body .agregarE form .direccion {
+    margin-left: 32px;
+    width: 150px;
+}
+
+body .agregarE form .rubro {
+    margin-left: 55px;
+    width: 150px;
+}
+
+body .agregarE form button {
+    margin-top: 1px;
+    margin-left: 103px;
+}
+
+/*Codigo hecho por Augusto Ferrari*/

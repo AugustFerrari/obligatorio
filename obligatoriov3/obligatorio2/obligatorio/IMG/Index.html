@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/sestilo.css">
+    <title>Tus Reclamos | Obligatorio</title>
+</head>
+    <body>
+        <header>
+                <ul>
+                    <li><img src="IMG/logo.png" alt=""></li>
+                    <li><u>Principal</u></li>
+                    <li><u>Ver Reclamos</u></li>
+                    <li><u>Estadistica</u></li>
+                    <li><u>Ingresar Empresa</u></li>
+                    <li>
+                        <form action="Index.html">
+                            <input type="text">
+                            <button><img src="IMG/lupa.png" alt=""></button>
+                        </form>
+                    </li>
+                </ul>
+        </header>
+        <article>
+            <section class="inicio">
+                <h2>Sitio para gestión de reclamos</h2>
+                <h3>Este sitio permite ingresar reclamos o quejas y sectionersas consultas</h3>
+                <p>Sitio Desarrollado en el curso de Programacion I - 1er semestre 2023 - Universidad ORT Uruguay por:</p>
+                <p class="nombreft"><a href="IMG/fotoperfil.jpg" target="_blank"><img src="IMG/fotoperfil.jpg" alt=""></a><cite>_</cite>Augusto Ferrari | 302539</p>
+                <div class="bttnreclamo">
+                    <button class="botonreclamo">Agrega tu reclamo aqui</button>
+                </div>
+            </section>
+            <section class="agregarR">
+                <h2>Agregar Reclamo</h2>
+                <form class="formreclamo" action="Index.html">
+                    <label for="nombre">Nombre</label> 
+                    <input class="nombre" id="nombre" name="nombre" type="text" maxlength="30" placeholder="Tu nombre..." required><br>
+                    <label for="empresa">Empresa</label>
+                    <select class="empresa" name="empresa" id="empresa" required>
+                        <option value="">TodoViajes SA</option>
+                    </select><br>
+                    <label for="reclamo">Reclamo:</label>
+                    <input class="reclamo" id="reclamo" name="reclamo" type="text" maxlength="30" placeholder="El título es...." required><br>
+                    <textarea name="reclamotxt" id="reclamotext" cols="30" rows="10" placeholder="Y tu reclamo es...." required></textarea><br>
+                    <button>Agregar</button>
+                </form>
+            </section>
+            <section class="reclamosingresados">
+                <h2>Reclamos ingresados (los mas recientes primero)</h2>
+                <section class="contador">
+                    <h3>Reclamo No. 2</h3>
+                    <div class="cajareclamo">
+                        <p class="texto">Anonimo: <cite class="color1">¡Perdí mi valija!</cite></p>
+                        <p class="texto">Empresa: <cite class="color2">TodoViajes SA</cite></p>
+                        <p class="texto">Viajé por su empresa y la valija no llegó.</p>
+                        <div class="unidor">
+                            <p class="contador"><button>¡A mí también me pasó!</button> Contador: 3</p>
+                        </div>
+                    </div>
+                        <h3>Reclamo No. 1</h3>
+                    <div class="cajareclamo">
+                        <p class="texto">Luiz Pérez: <cite class="color1">Pasaje muy caro</cite></p>
+                        <p class="texto">Empresa: <cite class="color2">TodoViajes SA</cite></p>
+                        <p id="longitud" class="texto">El pasaje a BsAs está muy caro, comparé con otras compañías y el precio de ustedes es más del doble. Además de las otras empresas ofrecen catering.</p>
+                        <div class="unidor">
+                            <p><button>¡A mí también me pasó!</button> Contador: 1</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="estadistica">
+                <h2>Estadísticas</h2>
+                <h3>Empresa Seleccionadas</h3>
+                <div class="filtro">
+                    <button>A</button>
+                    <button class="color">T</button>
+                    <button>*</button>
+                </div>
+                <br>
+                <br>
+                <section class="orden">
+                        <input type="radio" id="creciente" name="orden" value="" checked/>
+                        <label for="creciente">Orden nombre creciente</label>
+                
+                        <input type="radio" id="dereciente" name="orden" value="" />
+                        <label for="dereciente">Orden nombre dereciente</label>
+                </section>
+                <br>
+                <div class="tabla">
+                    <table>
+                        <caption class="titulotabla">Empresas que empiezan con T</caption>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Dirección</th>
+                            <th>Rubro</th>
+                            <th>Cantidad</th>
+                        </tr>
+                        <tr>
+                            <td>TodoViajes SA</td>
+                            <td>Av Italia 51515</td>
+                            <td>Viajes</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+                <section class="informacion">
+                    <h3>Información general</h3>
+                    <p>El promedio de las cantidades considerando todos los reclamos de las empresas es: 4</p>
+                    <p>Total de empresas registradas: 2</p>
+                    <h3>Empresas sin Reclamos</h3>
+                    <ul><li>Alfa (18 de julio 12345) Rubro: Muebles</li></ul>
+                    <h3>Rubros con maxima cantidad de reclamos</h3>
+                    <ul><li>Viajes: cantidad 4</li></ul>
+                </section>
+            </section>
+            <section class="agregarE">
+                <h2>Agregar Empresa</h2>
+                <h3>Datos:</h3>
+                <form class="formempresa" action="Index.html">
+                    <label for="nombre2">Nombre</label> 
+                    <input class="nombre" id="nombre2" name="nombre" type="text" maxlength="30" required><br>
+                    <label for="direccion">Dirección</label> 
+                    <input class="direccion" id="direccion" name="direccion" type="text" maxlength="30" required><br>
+                    <label for="rubro">Rubro</label>
+                    <select class="rubro" name="rubro" id="rubro" required>
+                        <option value="">Sin datos</option>
+                    </select><br>
+                    <button>Agregar</button>
+                </form>
+            </section>
+        </article>
+    </body>
+</html>
+
+<!-- Codigo hecho por Augusto Ferarri -->
